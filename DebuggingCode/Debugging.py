@@ -36,9 +36,10 @@ def compute(n):
         for i in range(1, n - 9):  # Adjusted the range to start from 1 and end at (n - 9)
             out *= i
     else:
-        lim = n - 19               # By Taking correct value of lim we will get required output
+        # lim = n - 19             # By Taking correct value of lim we will get required output
+        lim = n - 20
         out = lim * lim
-        out = out - lim
+        out = out + lim            # By changing opererator '-' to '+' we will get required output
         out = out / 2  
     print(out)
 
